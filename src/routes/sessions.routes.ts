@@ -6,6 +6,7 @@ const sessionsRouter = Router();
 
 sessionsRouter.post('/', async (request, response) => {
   const { email, password } = request.body;
+  // console.log(`Recebido:  ${password}`);
 
   const authenticateUser = new AuthenticateUserService();
 
